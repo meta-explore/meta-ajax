@@ -1,0 +1,19 @@
+{
+  "name": "meta-ajax",
+  "version": "0.0.1",
+  "description": "meta-ajax",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "rimraf lib/* && babel src -d lib --no-babelrc --presets=es2015,stage-0",
+    "prepublish": "npm run compile"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "rimraf": "^3.0.0"
+  }
+}
